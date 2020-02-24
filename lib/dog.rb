@@ -34,7 +34,7 @@ end
 def save
   new_dog = self
     sql = <<-SQL
-    INSERT INTO  dogs (name, breed)
+    INSERT INTO  dogs (self.name, self.breed)
     VALUES (?,?)
     SQL
 
