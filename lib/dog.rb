@@ -59,7 +59,7 @@ id = row[0]
 name = row[1]
 breed = row[3]
 
-dog_from_db = Dog.new(id, name, breed)
+dog_from_db = Dog.new(id: id, name: name , breed: breed)
 dog_from_db
 
 end
