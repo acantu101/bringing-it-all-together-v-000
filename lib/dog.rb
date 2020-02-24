@@ -32,9 +32,11 @@ def self.drop_table
 end
 
 def save
-  new_dog = self
+  name = self.name
+  breed = self.breed
+  
     sql = <<-SQL
-    INSERT INTO  dogs (self.name, self.breed)
+    INSERT INTO  dogs (name, breed)
     VALUES (?,?)
     SQL
 
@@ -79,7 +81,7 @@ def self.find_by_id(id)
 end
 
 def self.find_by_or_create_by(name:, breed:)
-  if
+
 end
 
 
