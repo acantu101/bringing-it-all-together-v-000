@@ -74,10 +74,9 @@ def self.find_by_id(id)
   SQL
 
   DB[:conn].execute(sql,id).map do |row|
-    dog_from_db = self.new_from_db(row)
+    binding.pry
 
 
-  end.dog_from_db
 end
 
 def self.find_or_create_by(name:, breed:)
