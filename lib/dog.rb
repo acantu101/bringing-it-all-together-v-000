@@ -53,5 +53,12 @@ def self.create(dogi)
 
 end
 
+def self.new_from_db(row)
+
+row
+binding.pry
+end
+  
+end
 
 end
