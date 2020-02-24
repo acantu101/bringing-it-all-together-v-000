@@ -32,8 +32,6 @@ def self.drop_table
 end
 
 def save
-  name = self.name
-  breed = self.breed
 
     sql = <<-SQL
     INSERT INTO  dogs (name, breed)
@@ -43,6 +41,7 @@ def save
   DB[:conn].execute(sql, self.name, self.breed)
   @id = DB[:conn].execute("SELECT last_insert_rowid() FROM dogs")[0][0]
 
+new_dog = self
 new_dog
 
 end
