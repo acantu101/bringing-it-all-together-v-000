@@ -89,7 +89,7 @@ if !dog.empty?
   dog_attributes = dog[0]
   dog = Dog.new(dog_attributes[0], dog_attributes[1], dog_attributes[2])
   dog
-else 
+else
   dog = self.create(name: name, breed: breed)
   end
 end
