@@ -75,7 +75,7 @@ def self.find_by_id(id)
 
   DB[:conn].execute(sql,id).map do |row|
     dog_from_db = self.new_from_db(row)
-  
+
 
   end.dog_from_db
 end
