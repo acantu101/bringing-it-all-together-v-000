@@ -46,9 +46,8 @@ new_dog
 end
 
 def self.create(dogi)
-  new_dogi = dogi.flatten
-  binding.pry
-  new_dog = Dog.new(name, breed)
+
+  new_dog = Dog.new(dogi)
   new_dog.save
   new_dog
 
