@@ -34,7 +34,7 @@ end
 def save
   name = self.name
   breed = self.breed
-  
+
     sql = <<-SQL
     INSERT INTO  dogs (name, breed)
     VALUES (?,?)
