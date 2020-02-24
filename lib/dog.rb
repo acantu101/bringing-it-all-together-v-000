@@ -1,3 +1,4 @@
+require 'pry'
 class Dog
 
 attr_accessor :name, :breed
@@ -44,7 +45,9 @@ new_dog
 
 end
 
-def self.create(name, breed)
+def self.create(dogi)
+  new_dogi = dogi.flatten
+  binding.pry
   new_dog = Dog.new(name, breed)
   new_dog.save
   new_dog
