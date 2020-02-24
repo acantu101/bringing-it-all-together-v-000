@@ -87,7 +87,7 @@ WHERE name = ? AND breed = ?", name, breed
 )
 if !dog.empty?
   dog_attributes = dog[0]
-  dog = Dog.new(dog_attributes[0], dog_attributes[1], dog_attributes[2])
+  dog = Dog.new(id: dog_attributes[0], name: dog_attributes[1], breed: dog_attributes[2])
   dog
 else
   dog = self.create(name: name, breed: breed)
