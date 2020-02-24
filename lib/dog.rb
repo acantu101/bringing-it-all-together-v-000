@@ -66,7 +66,7 @@ end
 
 def self.find_by_id(id)
   sql = <<-SQL
-  SELECT * 
+  SELECT *
   FROM dogs
   WHERE id = ?
   LIMIT 1
@@ -76,8 +76,8 @@ def self.find_by_id(id)
     self.new(row)
   end.first
 end
-  
-  
+
+
 
 
 end
