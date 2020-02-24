@@ -79,7 +79,7 @@ def self.find_by_id(id)
   end.first
 end
 
-def self.find_by_or_create_by(name:, breed:)
+def self.find_or_create_by(name:, breed:)
 dog = DB[:conn].execute(
 "SELECT *
 FROM dogs
