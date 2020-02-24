@@ -76,7 +76,7 @@ def self.find_by_id(id)
   dog_from_db = DB[:conn].execute(sql,id)
   dog_from_db
 
-end
+
 end
 
 def self.find_or_create_by(name:, breed:)
