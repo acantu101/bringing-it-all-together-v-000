@@ -74,8 +74,9 @@ def self.find_by_id(id)
   LIMIT 1
   SQL
 
-  dog_from_db = DB[:conn].execute(sql,id)
-  dog_from_db
+  DB[:conn].execute(sql,id).map do |row|
+    Dog.new(row)
+
 
 
 end
